@@ -1,7 +1,7 @@
 import kotlinx.coroutines.*
 
 fun main(args: Array<String>) = runBlocking{
-    var job = GlobalScope.launch {
+    val job = GlobalScope.launch {
         repeat(1000) {
             delay(100)
             print(".")
